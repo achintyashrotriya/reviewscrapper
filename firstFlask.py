@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 
 
-@app.route('/index',methods=['POST','GET'])
+@app.route('/',methods=['POST','GET'])
 def index():
     if request.method == 'POST':
         searchString = request.form['content']
